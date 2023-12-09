@@ -5,7 +5,12 @@ A Health care system created using Angular v17.0.1 with a main dashboard page, a
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
 
 ## Tools Used
-
+- Angular Framework
+- Angular Material
+- Tailwind CSS
+- ng2-charts Library
+- Leaflet Map Library
+- JSON Server
 
 ## Development server
 
