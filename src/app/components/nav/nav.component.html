@@ -1,0 +1,49 @@
+<div class="bg-[#242728] p-4 flex flex-col side-nav">
+  <div class="flex cursor-pointer justify-center" routerLink="">
+    <img class="w-12 h-6 mt-5" src="/assets/medical-icon.svg" />
+    <p class="text-[#AAAAAA] text-xl pt-5 pl-1 font-sans font-semibold">
+      Healthcare
+    </p>
+  </div>
+
+  <div class="mt-20">
+    <ul>
+      <li
+        routerLink="dashboard"
+        routerLinkActive="active"
+        class="text-center mb-2 cursor-pointer p-2 hover:bg-[#313636] duration-500 rounded-lg"
+      >
+        <img class="mx-auto mb-1 w-5" src="/assets/dashboard-icon.svg" />
+        <p class="text-[#AAAAAA] font-sans font-semibold">Dashboard</p>
+      </li>
+      <li
+        routerLink="staff"
+        routerLinkActive="active"
+        class="text-center mb-2 cursor-pointer p-2 hover:bg-[#313636] duration-500 rounded-lg"
+      >
+        <img class="mx-auto mb-1 w-7" src="/assets/staff-icon.svg" />
+        <p class="text-[#AAAAAA] font-sans font-semibold">Staff</p>
+      </li>
+
+      <li
+        routerLink="patients"
+        routerLinkActive="active"
+        class="text-center mb-2 cursor-pointer p-2 hover:bg-[#313636] duration-500 rounded-lg"
+      >
+        <img class="mx-auto mb-1 w-5" src="/assets/patients-icon.svg" />
+        <p class="text-[#AAAAAA] font-sans font-semibold">Patients</p>
+      </li>
+      <li
+        routerLink="appointments"
+        routerLinkActive="active"
+        class="text-center mb-2 cursor-pointer p-2 hover:bg-[#313636] duration-500 rounded-lg"
+      >
+        <img class="mx-auto mb-1 w-5" src="/assets/appointments-icon.svg" />
+        <p class="text-[#AAAAAA] font-sans font-semibold">Appointments</p>
+      </li>
+    </ul>
+  </div>
+  <button mat-menu-item class="mt-36">
+    <mat-icon matTooltip="Settings" class="text-[#AAAAAA]">more_horiz</mat-icon>
+  </button>
+</div>

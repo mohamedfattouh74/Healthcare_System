@@ -1,0 +1,10 @@
+:host {
+  display: block;
+}
+::ng-deep.side-nav {
+  height: 100%;
+}
+
+.active {
+  background-color: #313636;
+}

@@ -1,0 +1,56 @@
+<h2 mat-dialog-title class="text-center">Add Appointment</h2>
+
+<mat-dialog-content
+  ><form
+    id="appointments-form"
+    [formGroup]="appointmentsForm"
+    (ngSubmit)="submitAppointmentsForm()"
+  >
+    <div class="grid grid-cols-1 mt-8 mx-4">
+      <mat-form-field class="ms-6">
+        <mat-label>Description</mat-label>
+        <input
+          matInput
+          placeholder="Enter Appointment Description"
+          formControlName="title"
+        />
+        <mat-error>This field is required</mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="ms-6">
+        <mat-label>Appointment Date</mat-label>
+        <input
+          formControlName="date"
+          placeholder="Choose Appointment Date"
+          matInput
+          [matDatepicker]="picker"
+        />
+        <mat-hint class="text-[#AAAAAA]">MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="picker"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+        <mat-error>This field is required</mat-error>
+      </mat-form-field>
+    </div>
+  </form></mat-dialog-content
+>
+
+<div class="flex justify-end mr-6">
+  <button
+    mat-dialog-close
+    form="appointments-form"
+    type="submit"
+    class="text-[#AAAAAA] bg-[#444444] font-medium font-sans py-3 px-8 rounded-md hover:bg-[#2f2f2f] duration-300"
+  >
+    Add
+  </button>
+
+  <button
+    mat-dialog-close
+    class="text-[#AAAAAA] border-2 border-[#444444] bg-transparent hover:bg-[#444444] font-medium font-sans py-3 px-6 ml-2 rounded-md duration-300"
+  >
+    Cancel
+  </button>
+</div>

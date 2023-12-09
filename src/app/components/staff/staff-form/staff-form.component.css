@@ -1,0 +1,27 @@
+:host {
+  display: block;
+}
+
+::ng-deep .mat-mdc-dialog-container .mdc-dialog__surface {
+  background-color: #242728;
+  border-radius: 20px;
+}
+
+::ng-deep .mat-mdc-dialog-container .mdc-dialog__title {
+  color: #aaaaaa;
+  background-color: #3f3f3f;
+}
+
+::ng-deep .mdc-text-field--filled:not(.mdc-text-field--disabled) {
+  background-color: #aaaaaa !important;
+}
+
+::ng-deep
+  .mdc-text-field--filled.mdc-text-field--invalid:not(.mdc-text-field--disabled)
+  .mdc-line-ripple::before {
+  border-bottom-color: #aaaaaa;
+}
+
+.mat-mdc-dialog-container .mdc-dialog__content {
+  color: #3f3f3f !important;
+}

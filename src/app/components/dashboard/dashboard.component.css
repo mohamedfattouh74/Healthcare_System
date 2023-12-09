@@ -1,0 +1,39 @@
+:host {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+hr {
+  height: 1px;
+  background-color: rgba(98, 98, 98, 0.2);
+  border: none;
+}
+
+.appointment-info::before {
+  content: "";
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #616754;
+  margin-right: 5px;
+}
+
+::ng-deep.mat-mdc-progress-spinner circle,
+.mat-spinner circle {
+  stroke: #aaaaaa !important;
+  position: fixed;
+}
+
+::ng-deep mat-spinner {
+  position: fixed;
+  z-index: 999;
+  overflow: show;
+  margin: auto;
+  margin-top: 20px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

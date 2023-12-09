@@ -1,0 +1,23 @@
+:host {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+::ng-deep.mat-mdc-progress-spinner circle,
+.mat-spinner circle {
+  stroke: #aaaaaa !important;
+  position: fixed;
+}
+
+::ng-deep mat-spinner {
+  position: fixed;
+  z-index: 999;
+  overflow: show;
+  margin: auto;
+  margin-top: 20px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}

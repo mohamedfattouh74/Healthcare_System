@@ -1,0 +1,104 @@
+<p class="text-[#AAAAAA] text-3xl font-sans font-bold ps-14 pt-10 pb-6">
+  Dashboard
+</p>
+
+<div class="mx-14">
+  <div class="grid grid-cols-3 gap-4 max-lg:gap-4 max-lg:grid-cols-1">
+    <div class="h-32 col-span-1 rounded-lg">
+      <div class="rounded-lg bg-[#242728] h-[120px] mb-4">
+        <div class="flex">
+          <img class="w-6 ml-2" src="/assets/staff-icon.svg" />
+          <p class="text-[#AAAAAA] font-sans font-semibold pl-2 pt-3">
+            TOTAL NUMBER OF STAFF
+          </p>
+        </div>
+        <hr />
+
+        <p class="text-4xl text-[#AAAAAA] text-center font-sans font-bold pt-2">
+          {{ staffCount() }}
+        </p>
+      </div>
+      <div class="rounded-lg bg-[#242728] h-[120px]">
+        <div class="flex">
+          <img class="w-4 ml-2" src="/assets/patients-icon.svg" />
+          <p class="text-[#AAAAAA] font-sans font-semibold pl-2 pt-3">
+            TOTAL NUMBER OF PATIENTS
+          </p>
+        </div>
+        <hr />
+        <p class="text-4xl text-[#AAAAAA] text-center font-sans font-bold pt-2">
+          {{ patientsCount() }}
+        </p>
+      </div>
+      <div class="rounded-lg bg-[#242728] mt-4">
+        <p class="text-[#AAAAAA] font-sans font-semibold pl-2 pt-2">
+          TOTAL REVENUE
+        </p>
+
+        <hr />
+
+        <div class="chart h-[300px]">
+          <canvas
+            class="mx-auto p-10"
+            baseChart
+            [datasets]="revenueChartData"
+            [labels]="revenueChartLabels"
+            [type]="revenueChartType"
+            [options]="revenueChartOptions"
+          ></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="rounded-lg col-span-2 max-lg:col-span-1">
+      <app-map></app-map>
+      <div class="flex space-x-4">
+        <div class="rounded-lg bg-[#242728] mt-4 w-[50%] h-[340px]">
+          <p class="text-[#AAAAAA] font-sans font-semibold pl-2 pt-2">
+            RE-BOOKING RATE (%)
+          </p>
+
+          <hr />
+          <div class="chart h-full mt-10 mx-4">
+            <canvas
+              baseChart
+              [datasets]="rebookingRateChartData"
+              [labels]="rebookingRateChartLabels"
+              [type]="rebookingRateChartType"
+              [options]="rebookingRateChartOptions"
+            ></canvas>
+          </div>
+        </div>
+        <div
+          class="rounded-lg bg-[#242728] mt-4 w-[50%] h-[340px] overflow-y-scroll"
+        >
+          <p class="text-[#AAAAAA] font-sans font-semibold pl-2 pt-2">
+            UPCOMING APPOINTMENTS
+          </p>
+
+          <hr />
+          @for (appointment of upcomingAppointments ; track appointment ) {
+          <div class="mt-4 mx-4 mb-4">
+            <p class="text-[#AAAAAA] font-sans font-semibold appointment-info">
+              {{ appointment.description }}
+            </p>
+            <p class="text-[#464646] font-sans font-semibold pl-4">
+              {{ appointment.duration }}
+            </p>
+            <div class="flex font-sans font-semibold ml-4">
+              <button class="text-[#333063]">Medical History</button>
+              <button class="text-[#333063] ms-6">Reports</button>
+            </div>
+          </div>
+          <hr />
+          } @empty {
+          <p
+            class="text-[#AAAAAA] font-sans font-medium text-center text-xl pt-6"
+          >
+            Currently there are no upcoming appointments
+          </p>
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

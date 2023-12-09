@@ -1,0 +1,17 @@
+<p class="text-[#AAAAAA] text-3xl font-sans font-bold ps-14 pt-10">
+  Appointments
+</p>
+<div class="flex justify-end mr-16">
+  <button
+    (click)="openAppointmentsDialog()"
+    class="text-[#AAAAAA] bg-[#444444] font-semibold font-sans p-3 rounded-md hover:bg-[#2f2f2f] duration-300"
+  >
+    Add Appointment
+  </button>
+</div>
+<full-calendar
+  #calendar
+  class="text-[#AAAAAA] mt-4 mx-16 w-[1200px] h-[560px]"
+  [options]="calendarOptions"
+  [events]="appointments()"
+></full-calendar>

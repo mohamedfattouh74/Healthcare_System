@@ -1,0 +1,304 @@
+{
+  "doctors": [
+    {
+      "name": "Youssef Ahmed",
+      "age": "64",
+      "department": "Physiotherapy",
+      "startingDate": "2023-11-28T22:00:00.000Z",
+      "id": 1
+    },
+    {
+      "name": "Youssef Adel",
+      "age": 35,
+      "department": "Consultation",
+      "startingDate": "2022-10-08T22:00:00.000Z",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "name": "Ibrahim Amgad",
+      "age": 65,
+      "department": "Pathology",
+      "startingDate": "2016-05-22T22:00:00.000Z"
+    },
+    {
+      "name": "Mohamed Adel",
+      "age": "55",
+      "department": "Pathology",
+      "startingDate": "2023-04-04T22:00:00.000Z",
+      "id": 4
+    },
+    {
+      "name": "Asser Mazen",
+      "age": "40",
+      "department": "Physiotherapy",
+      "startingDate": "2023-11-14T22:00:00.000Z",
+      "id": 6
+    },
+    {
+      "name": "Omar Ahmed",
+      "age": "50",
+      "department": "Pathology",
+      "startingDate": "2023-11-14T22:00:00.000Z",
+      "id": 7
+    },
+    {
+      "name": "Omar Fares",
+      "age": "50",
+      "department": "Pathology",
+      "startingDate": "2017-02-01T22:00:00.000Z",
+      "id": 8
+    },
+    {
+      "name": "Youssef Idrees",
+      "age": "45",
+      "department": "Dietary",
+      "startingDate": "2023-05-31T21:00:00.000Z",
+      "id": 9
+    }
+  ],
+  "departments": [
+    "Physiotherapy",
+    "Pathology",
+    "Dietary",
+    "Radiology",
+    "Consultation"
+  ],
+  "patients": [
+    {
+      "name": "Omar Ahmed",
+      "age": "50",
+      "email": "omar@gmail.com",
+      "lastAppointmentDate": "2023-11-28T22:00:00.000Z",
+      "id": 1
+    },
+    {
+      "name": "Ahmed Adel",
+      "age": "38",
+      "email": "ahmed12@gmail.com",
+      "lastAppointmentDate": "2022-10-08T22:00:00.000Z",
+      "id": 2
+    },
+    {
+      "name": "Ahmed Adel",
+      "age": "24",
+      "email": "ahmedomar@gmail.com",
+      "lastAppointmentDate": "2023-11-14T22:00:00.000Z",
+      "id": 3
+    },
+    {
+      "name": "Ahmed Aly",
+      "age": "20",
+      "email": "ahmedaly@gmail.com",
+      "lastAppointmentDate": "2023-11-30T22:00:00.000Z",
+      "id": 4
+    }
+  ],
+  "dashboard-upcomingAppointments": [
+    {
+      "description": "Veronica - General Checkup",
+      "duration": "10 am - 45 mins"
+    },
+    {
+      "description": "Amy Border - Cosmetology Revision 2",
+      "duration": "10:45 am - 30 mins"
+    },
+    {
+      "description": "Alan Robert - Osteopathy",
+      "duration": "11:30 am - 30 mins"
+    },
+    {
+      "description": "Sam Smith - General Checkup",
+      "duration": "11:45 am - 15 mins"
+    },
+    {
+      "description": "Joe Jonas - Osteopathy",
+      "duration": "12:00 am - 30 mins"
+    }
+  ],
+  "appointments": [
+    {
+      "id": 1,
+      "title": " Veronica - 10 am ",
+      "date": "2023-11-12"
+    },
+    {
+      "id": 2,
+      "title": "Jonas - 12 pm",
+      "date": "2023-11-06"
+    },
+    {
+      "id": 3,
+      "title": " Amy - 10 am",
+      "date": "2023-11-18"
+    },
+    {
+      "id": 4,
+      "title": "Bassem - 12 pm",
+      "date": "2023-11-13"
+    },
+    {
+      "title": "Adel - 10 am",
+      "date": "2023-11-28",
+      "id": 5
+    },
+    {
+      "title": "Ahmed - 11 am",
+      "date": "2023-11-29",
+      "id": 6
+    },
+    {
+      "title": "Ahmed - 11 am",
+      "date": "2023-11-08",
+      "id": 7
+    },
+    {
+      "title": "Mohamed - 11 am",
+      "date": "2023-11-30",
+      "id": 8
+    },
+    {
+      "title": "Omar - 3 pm",
+      "date": "2023-11-29",
+      "id": 9
+    },
+    {
+      "title": "Omar - 3 pm",
+      "date": "2023-11-23",
+      "id": 10
+    },
+    {
+      "title": "Omar - 3 pm",
+      "date": "2023-11-26",
+      "id": 11
+    },
+    {
+      "title": "Seif - 3 pm",
+      "date": "2023-11-28",
+      "id": 12
+    },
+    {
+      "title": "Youssef - 5 pm",
+      "date": "2023-11-16",
+      "id": 13
+    },
+    {
+      "title": "Shady - 2 pm",
+      "date": "2023-11-18",
+      "id": 14
+    },
+    {
+      "title": "Youssef - 2 pm",
+      "date": "2023-11-18",
+      "id": 15
+    },
+    {
+      "title": "Sarah - 4 pm",
+      "date": "2023-11-08",
+      "id": 16
+    },
+    {
+      "title": "Youssef - 2 pm",
+      "date": "2023-11-07",
+      "id": 17
+    },
+    {
+      "title": "Mariam - 4 pm",
+      "date": "2023-11-24",
+      "id": 19
+    },
+    {
+      "title": "Fares - 4:30 pm",
+      "date": "2023-11-11",
+      "id": 20
+    },
+    {
+      "title": "Fares - 10 am",
+      "date": "2023-11-10",
+      "id": 21
+    },
+    {
+      "title": "Fady - 5:30 pm",
+      "date": "2023-11-17",
+      "id": 22
+    },
+    {
+      "title": "Ibrahim - 6:30 pm",
+      "date": "2023-11-17",
+      "id": 23
+    },
+    {
+      "title": "Adham - 8:40 pm",
+      "date": "2023-11-12",
+      "id": 27
+    },
+    {
+      "title": "Adham - 5 pm",
+      "date": "2023-11-14",
+      "id": 28
+    },
+    {
+      "title": "Youssef - 2:50 pm",
+      "date": "2023-11-27",
+      "id": 31
+    },
+    {
+      "title": "Sara - 2:30 pm",
+      "date": "2023-11-27",
+      "id": 32
+    },
+    {
+      "title": "Salma - 3:30 pm",
+      "date": "2023-12-27",
+      "id": 33
+    },
+    {
+      "title": "Salma - 12 pm",
+      "date": "2023-11-25",
+      "id": 34
+    },
+    {
+      "title": "Mostafa - 11 am",
+      "date": "2023-11-09",
+      "id": 35
+    },
+    {
+      "title": "Diaa - 5 pm",
+      "date": "2023-12-01",
+      "id": 36
+    },
+    {
+      "title": "Diaa - 5:40 pm",
+      "date": "2023-12-14",
+      "id": 37
+    },
+    {
+      "title": "Hassan- 5:40 pm",
+      "date": "2023-12-16",
+      "id": 38
+    },
+    {
+      "title": "Hassan- 5:40 pm",
+      "date": "2023-11-25",
+      "id": 39
+    },
+    {
+      "title": "Aly - 5pm",
+      "date": "2023-12-09",
+      "id": 40
+    }
+  ],
+  "dashboard-totalRevenue": {
+    "Profit": 70000,
+    "Expenses": 5000
+  },
+  "dashboard-rebookingRate": {
+    "Jan": 65,
+    "Feb": 59,
+    "Mar": 80,
+    "Apr": 72,
+    "May": 35,
+    "Jun": 55,
+    "Jul": 45
+  }
+}

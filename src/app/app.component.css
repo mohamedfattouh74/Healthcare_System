@@ -1,0 +1,17 @@
+@import "~leaflet/dist/leaflet.css";
+
+:host {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+::ng-deep app-root {
+  display: block;
+  height: 100%;
+}
+
+::ng-deep .mat-progress-spinner circle,
+.mat-spinner circle {
+  stroke: #4b5156 !important;
+}

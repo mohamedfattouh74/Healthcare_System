@@ -1,0 +1,49 @@
+:host {
+  display: block;
+}
+
+::ng-deep .fc .fc-toolbar-title {
+  color: #666666;
+  font-weight: 600 !important;
+}
+
+::ng-deep .fc .fc-button-primary {
+  background-color: #444444;
+}
+
+::ng-deep .fc .fc-button-primary:hover {
+  background-color: #2f2f2f;
+}
+
+::ng-deep .fc .fc-button-primary:disabled {
+  background-color: #444444;
+}
+
+::ng-deep .fc-h-event .fc-event-title-container {
+  background-color: #444444;
+}
+
+::ng-deep .fc-h-event {
+  border: 0px solid #aaaaaa !important;
+}
+
+::ng-deep .fc .fc-scroller-harness-liquid {
+  background-color: #242728;
+}
+
+::ng-deep .fc .fc-scrollgrid-section-header {
+  background-color: #191c1c !important;
+}
+
+::ng-deep .fc-theme-standard .fc-scrollgrid {
+  border: 1px solid #626262;
+}
+
+::ng-deep .fc .fc-daygrid-day.fc-day-today {
+  background-color: #5c5c5c;
+}
+
+::ng-deep .fc-daygrid-block-event .fc-event-title {
+  font-weight: 500;
+  color: #eeeeee;
+}
