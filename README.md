@@ -9,6 +9,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Angular Material
 - Tailwind CSS
 - ng2-charts Library
+- Full calendar JS Library
 - Leaflet Map Library
 - JSON Server
 
