@@ -1,4 +1,6 @@
-# HealthcareSystem
+# Healthcare System
+
+A Health care system created using Angular v17.0.1 with a main dashboard page, and seperate pages for staff , patients, and appointments with crud operations for each. The Main objective at this project was to practice using Signals,Standalone components, Deferrable views,the new built in control flow syntax of angular.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
 
